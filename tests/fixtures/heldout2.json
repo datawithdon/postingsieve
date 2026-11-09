@@ -1,0 +1,12 @@
+[
+ {"name":"benefits-noise","text":"Payroll Administrator\nSudbury, ON | Hybrid (three days a week in office)\nThe hiring range is $68,500-$76,000 annually. We offer 15 days of vacation, a $1,500 wellness account and 4% RRSP match.\nYou bring 2+ years of payroll experience and your PCP designation.",
+  "expect":{"salaryMin":68500,"salaryMax":76000,"period":"year","city":"Sudbury","workMode":"hybrid","officeDays":3,"years":2,"french":"not_mentioned"}},
+ {"name":"no-numbers","text":"Graphic Designer\nJoin our friendly team in downtown Toronto. Salary commensurate with experience. Some experience with Adobe Creative Suite is required. Work location: in person.",
+  "expect":{"salaryMin":null,"salaryMax":null,"period":null,"city":"Toronto","workMode":"onsite","officeDays":null,"years":null,"french":"not_mentioned"}},
+ {"name":"french-optional-remote","text":"Technical Writer (Work from home)\nCanada-wide. Pay: $40.00 - $48.00 per hour. Knowledge of French would be a nice bonus but is not necessary. At least 3 years writing API documentation.",
+  "expect":{"salaryMin":40,"salaryMax":48,"period":"hour","city":null,"workMode":"remote","officeDays":null,"years":3,"french":"preferred"}},
+ {"name":"weekly-onsite","text":"Line Cook\nHamilton, Ontario\nEarn $900 a week. Work is on site at our restaurant. Weekends required. One year of kitchen experience needed.",
+  "expect":{"salaryMin":900,"salaryMax":900,"period":"week","city":"Hamilton","workMode":"onsite","officeDays":null,"years":1,"french":"not_mentioned"}},
+ {"name":"head-office-trap","text":"Regional Sales Lead\nOur head office is in Calgary, but this position is based in Kingston, Ontario.\nHybrid with one day per week in the office.\n$105,000 - $125,000 a year. 8 years of sales leadership experience required. French is mandatory.",
+  "expect":{"salaryMin":105000,"salaryMax":125000,"period":"year","city":"Kingston","workMode":"hybrid","officeDays":1,"years":8,"french":"required"}}
+]

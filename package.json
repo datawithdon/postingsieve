@@ -1,0 +1,20 @@
+{
+  "name": "postingsieve",
+  "private": true,
+  "version": "0.3.0",
+  "type": "module",
+  "scripts": {
+    "build": "sh scripts/sandboxed.sh sh -c 'tsc --noEmit && node scripts/build.mjs && node scripts/check-dist.mjs'",
+    "test": "sh scripts/sandboxed.sh vitest run",
+    "test:sandbox": "sh scripts/sandboxed.sh node tests/sandbox-probe.mjs",
+    "typecheck": "sh scripts/sandboxed.sh tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/chrome": "0.3.7",
+    "@types/node": "26.6.6",
+    "jsdom": "31.0.0",
+    "typescript": "5.9.3",
+    "vite": "8.3.6",
+    "vitest": "5.1.0"
+  }
+}

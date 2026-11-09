@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "name": "PostingSieve",
+  "version": "0.3.0",
+  "description": "Scores job postings against your own must-haves with Chrome's on-device model. Nothing leaves your machine.",
+  "minimum_chrome_version": "138",
+  "incognito": "not_allowed",
+  "permissions": [
+    "storage",
+    "sidePanel"
+  ],
+  "icons": {
+    "16": "icon-16.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  },
+  "action": {
+    "default_title": "PostingSieve"
+  },
+  "options_ui": {
+    "page": "src/options/index.html",
+    "open_in_tab": true
+  },
+  "background": {
+    "service_worker": "assets/worker.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.linkedin.com/*",
+        "https://ca.indeed.com/*",
+        "https://www.indeed.com/*",
+        "https://www.jobbank.gc.ca/*"
+      ],
+      "js": [
+        "assets/content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "externally_connectable": {
+    "ids": []
+  },
+  "content_security_policy": {
+    "extension_pages": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
+  },
+  "side_panel": {
+    "default_path": "src/panel/index.html"
+  }
+}

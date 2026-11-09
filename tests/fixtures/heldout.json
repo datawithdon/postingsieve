@@ -1,0 +1,14 @@
+[
+ {"name":"weekday-names","text":"Senior Financial Analyst\nCompensation: CA$95,000–CA$110,000 + RRSP matching\nFlexible hybrid: you'll be in our Toronto office Tuesdays and Thursdays.\nMinimum of six (6) years in FP&A.",
+  "expect":{"salaryMin":95000,"salaryMax":110000,"period":"year","city":"Toronto","workMode":"hybrid","officeDays":2,"years":6,"french":"not_mentioned"}},
+ {"name":"terse-hourly","text":"Shipper/Receiver - Etobicoke\n$32/hr\n100% in-office, no WFH.\n3-5 yrs exp. needed.",
+  "expect":{"salaryMin":32,"salaryMax":32,"period":"hour","city":"Etobicoke","workMode":"onsite","officeDays":null,"years":3,"french":"not_mentioned"}},
+ {"name":"remote-french","text":"Bilingual Support Specialist\nRemote-first team. Occasional travel to Ottawa. English and French (spoken and written) required. Great culture and a generous benefits package.",
+  "expect":{"salaryMin":null,"salaryMax":null,"period":null,"city":null,"workMode":"remote","officeDays":null,"years":null,"french":"required"}},
+ {"name":"shorthand-salary","text":"Entry-level Marketing Coordinator, Burlington ON\nSalary: 65-75k DOE\n4 days on-site, 1 WFH\n0-2 years of experience welcome.",
+  "expect":{"salaryMin":65000,"salaryMax":75000,"period":"year","city":"Burlington","workMode":"hybrid","officeDays":4,"years":0,"french":"not_mentioned"}},
+ {"name":"monthly","text":"Site Coordinator\nVaughan, Ontario. This job is on site.\nPay range $4,500 - $5,500 per month, depending on qualifications. Valid G licence required.",
+  "expect":{"salaryMin":4500,"salaryMax":5500,"period":"month","city":"Vaughan","workMode":"onsite","officeDays":null,"years":null,"french":"not_mentioned"}},
+ {"name":"number-traps","text":"Account Executive, Markham\nWe've been in business 25 years and serve 1,200 clients. You will carry a sales target of $1,000,000 annually.\nBase salary: $70,000 per year plus commission.\nMust have 10+ years' experience in B2B sales.",
+  "expect":{"salaryMin":70000,"salaryMax":70000,"period":"year","city":"Markham","workMode":"unknown","officeDays":null,"years":10,"french":"not_mentioned"}}
+]

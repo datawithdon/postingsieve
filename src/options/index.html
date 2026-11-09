@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PostingSieve settings</title>
+  <link rel="stylesheet" href="./options.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>PostingSieve</h1>
+    <p>Set your must-haves once. For each posting you open, the toolbar icon shows OK, ? or NO. Click the icon for the reasons in a side panel. Nothing is added to job pages, so sites can't see it.</p>
+  </header>
+
+  <section aria-labelledby="model-h">
+    <h2 id="model-h">On-device model</h2>
+    <p id="model-status" role="status">Checking…</p>
+    <button id="download" type="button" hidden>Download the model</button>
+    <progress id="progress" max="1" value="0" hidden></progress>
+  </section>
+
+  <section aria-labelledby="crit-h">
+    <h2 id="crit-h">Your must-haves</h2>
+    <p class="hint">Leave a field blank to ignore it.</p>
+    <form id="criteria">
+      <label for="salaryFloor">Lowest acceptable salary (CAD per year)</label>
+      <input id="salaryFloor" type="number" min="0" max="5000000" step="1000" inputmode="numeric" placeholder="90000">
+      <p class="hint">Hourly pay is converted at 2,080 hours a year.</p>
+
+      <label for="maxOfficeDays">Most office days a week</label>
+      <input id="maxOfficeDays" type="number" min="0" max="5" step="1" inputmode="numeric" placeholder="2">
+
+      <label for="commuteCities">Cities you'll commute to, one per line</label>
+      <textarea id="commuteCities" rows="5" placeholder="Toronto&#10;Ottawa"></textarea>
+      <p class="hint">Nothing calls a maps service, so this list stands in for commute time. Remote jobs always pass.</p>
+
+      <label for="maxRequiredYears">Most years of experience a job can require</label>
+      <input id="maxRequiredYears" type="number" min="0" max="60" step="1" inputmode="numeric" placeholder="5">
+
+      <label class="check"><input id="rejectFrenchRequired" type="checkbox"> Fail jobs that require French</label>
+
+      <label class="check"><input id="showOnPage" type="checkbox"> Also show badges inside job pages</label>
+      <p class="hint">Off by default. It adds visible elements to the page, so a site could detect them and link them to your account, along with which jobs you scored. It can't read the verdicts.</p>
+
+      <button type="submit">Save</button>
+      <span id="saved" role="status"></span>
+    </form>
+  </section>
+
+  <section aria-labelledby="try-h">
+    <h2 id="try-h">Try a posting</h2>
+    <p class="hint">Paste any posting to see what the model reads, what the checks changed, and the score. Works on any site.</p>
+    <label for="sample">Posting text</label>
+    <textarea id="sample" rows="9" maxlength="100000"></textarea>
+    <button id="run" type="button">Score this text</button>
+    <div id="result" aria-live="polite"></div>
+  </section>
+
+  <section aria-labelledby="data-h">
+    <h2 id="data-h">Saved results</h2>
+    <p class="hint">Results for postings you open are kept in memory only, so they're not read twice, and are gone when Chrome closes. Only your must-haves are saved to disk. The extension doesn't run in Incognito.</p>
+    <button id="clear" type="button">Clear saved results</button>
+    <span id="cleared" role="status"></span>
+  </section>
+</main>
+<script type="module" src="./options.ts"></script>
+</body>
+</html>
